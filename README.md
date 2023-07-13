@@ -5,9 +5,12 @@
 ```bash
 #!/usr/bin/env bash
 
+# Install globally git cz and pre-commit tools
 npm install -g commitizen
 npm install -g husky
 
+# Install pre-commit on groot repo
+husky install
 ```
 
 ## Install Groot Utility
