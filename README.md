@@ -7,6 +7,7 @@
 
 # Install globally git cz and pre-commit tools
 npm install -g commitizen
+npx commitizen init cz-conventional-changelog --save-dev --save-exact
 npm install -g husky
 
 # Install pre-commit on groot repo

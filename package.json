@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "@types/lodash": "^4.14.195",
-    "@types/screeps": "^3.3.3"
+    "@types/screeps": "^3.3.3",
+    "commitizen": "^4.3.0"
   },
   "scripts": {
     "commit": "cz"
@@ -9,6 +10,14 @@
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
